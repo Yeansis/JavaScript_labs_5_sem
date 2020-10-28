@@ -1,12 +1,17 @@
-/* тест для тысяч, миллионов, миллиарда и триллионов.
-количество цифр выбрано неспроста - для более точного
+// простое изменения пользователем исходных значений
+let test_var = [10 ** 4, 10 ** 8, 10 ** 12,
+  10 ** 16, 3.141592653589793238462643, 'Я люблю ТПУ'];
+
+/* вывод результатов в консоль. тест для тысяч, миллионов,
+миллиарда и триллионов. количество цифр в целых числах и
+другие переменные выбраны неспроста - для более точного
 теста написанного кода */
-console.log( converting_numbers(10 ** 4), '\n');
-console.log( converting_numbers(10 ** 8), '\n');
-console.log( converting_numbers(10 ** 12), '\n');
-console.log( converting_numbers(10 ** 16), '\n');
-console.log( converting_numbers(3.141592653589793238462643), '\n');
-console.log( converting_numbers('Я люблю ТПУ'), '\n');
+console.log( converting_numbers(test_var[0]), '\n');
+console.log( converting_numbers(test_var[1]), '\n');
+console.log( converting_numbers(test_var[2]), '\n');
+console.log( converting_numbers(test_var[3]), '\n');
+console.log( converting_numbers(test_var[4]), '\n');
+console.log( converting_numbers(test_var[5]), '\n');
 
 
 function converting_numbers(numb) {
