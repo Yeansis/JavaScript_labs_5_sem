@@ -6,7 +6,6 @@ for (let i = 0; i < a2.length + 2; i++) {
 }
 
 
-
 function fold_el_arr(a, b, n) {
 
     /* вычисление длин полученных массивов во избежании
