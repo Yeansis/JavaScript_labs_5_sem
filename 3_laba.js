@@ -1,17 +1,26 @@
-year = 2020;
-month = 9;
-day = 28;
-let arr = [year, month, day]
-console.log( monday_func(arr) )
+// простое изменения пользователем исходных значений
+let arr_1 = [2020, 9, 28]
+console.log( monday_func(arr_1) )
+let arr_2 = [2020, 3.14, 28]
+console.log( monday_func(arr_2) )
+let arr_3 = [2020, 9, "двадцать восемь"]
+console.log( monday_func(arr_3) )
 
 
 function monday_func(arr) {
-    Date.prototype.getNextWeekDay = function() {
-        let inception = this;
-        inception.setDate( this.getDate() - this.getDay() + 1 );
-        return inception.toLocaleDateString();
+    // проверка исходных данных на корректное значение
+    for(let i of arr) {
+        if(!(i % 1 === 0)) {
+            return 'Некорректные данные'
+        }
     }
 
+    // создание объекта Date
     let now = new Date(arr[0], arr[1], arr[2]);
-    return now.getNextWeekDay();
+
+    //запись преобразованных данных в объект
+    now.setDate( now.getDate() - now.getDay() + 1);
+
+    // возврат полученной даты
+    return now.toLocaleDateString();
 }
