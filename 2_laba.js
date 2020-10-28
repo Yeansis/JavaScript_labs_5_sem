@@ -32,5 +32,6 @@ function fold_el_arr(a, b, n) {
                 "Заданного индекса нет в 1 массиве!";
         }
     }
+
     return a[n] + b[n];
 }
