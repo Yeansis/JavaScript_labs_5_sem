@@ -1,13 +1,13 @@
 // простое изменения пользователем исходных значений
 let arr_1 = [2020, 9, 28]
-console.log( monday_func(arr_1) )
+console.log( first_day_week(arr_1) )
 let arr_2 = [2020, 3.14, 28]
-console.log( monday_func(arr_2) )
+console.log( first_day_week(arr_2) )
 let arr_3 = [2020, 9, "двадцать восемь"]
-console.log( monday_func(arr_3) )
+console.log( first_day_week(arr_3) )
 
 
-function monday_func(arr) {
+function first_day_week(arr) {
     // проверка исходных данных на корректное значение
     for(let i of arr) {
         if(!(i % 1 === 0)) {
