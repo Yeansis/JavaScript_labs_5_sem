@@ -1,4 +1,4 @@
-// простое изменения пользователем исходных значений
+// возможность изменения пользователем исходных значений
 let test_var = [10 ** 4, 10 ** 8, 10 ** 12,
   10 ** 16, 3.141592653589793238462643, 'Я люблю ТПУ'];
 
@@ -50,7 +50,7 @@ function converting_numbers(numb) {
   /* добавление в ret_arr остальных групп чисел по 3, чередуя
   их с запятой */
   let counter = rem;
-  for (let i = 0; i<( (numb_len - rem) / 3); i++) {
+  for (let i = 0; i < ((numb_len - rem) / 3); i++) {
       ret_arr.push(',');
     for (let i = counter; i < counter + 3; i++) {
         ret_arr.push(str_numb[i]);
