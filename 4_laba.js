@@ -8,6 +8,11 @@ console.log( poleax_for_str(imp_data, size) );
 возможен "хвостик" в виде неполного куска */
 function poleax_for_str(obj, sz) {
 
+    // проверка входного значения размера
+    if ( !(sz % 1 === 0) || sz <= 0 ) {
+        return "Введен неверный размер!"
+    }
+
     // преобразуем полученный объект в строку
     let str = String(obj);
 
