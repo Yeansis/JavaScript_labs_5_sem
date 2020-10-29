@@ -1,10 +1,12 @@
 // возможность изменения пользователем исходных значений
 let arr_1 = [2020, 9, 28];
 console.log( first_day_week(arr_1) );
-let arr_2 = [2020, 3.14, 28];
+let arr_2 = [2020, 9, 25];
 console.log( first_day_week(arr_2) );
-let arr_3 = [2020, 9, "двадцать восемь"];
+let arr_3 = [2020, 3.14, 28];
 console.log( first_day_week(arr_3) );
+let arr_4 = [2020, 9, "двадцать восемь"];
+console.log( first_day_week(arr_4) );
 
 
 function first_day_week(arr) {
@@ -19,9 +21,21 @@ function first_day_week(arr) {
     // создание объекта Date
     let now = new Date(arr[0], arr[1], arr[2]);
 
-    //запись преобразованных данных в объект
+    let fake_answer = now.toLocaleDateString()
+
+    /* запись преобразованных данных в объект и выделение
+    даты в формате дд.мм.гггг */
     now.setDate( now.getDate() - now.getDay() + 1);
+    let answer = now.toLocaleDateString()
+
+    /* в случае, если исходная дата является воскресеньем
+    то, в связи с особенностями формата хранения даты
+    преобразовываем выходную дату до правильного состояния */
+    if ( answer > fake_answer ) {
+        now.setDate( now.getDate() - now.getDay() - 7 + 1);
+        answer = now.toLocaleDateString()
+    }
 
     // возврат полученной даты
-    return now.toLocaleDateString();
+    return answer;
 }
