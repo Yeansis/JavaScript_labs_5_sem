@@ -7,13 +7,15 @@ let arr_3 = [2020, 3.14, 28];
 console.log( first_day_week(arr_3) );
 let arr_4 = [2020, 9, "двадцать восемь"];
 console.log( first_day_week(arr_4) );
+let arr_5 = [2020, 9, -6];
+console.log( first_day_week(arr_5) );
 
 
 function first_day_week(arr) {
 
     // проверка исходных данных на корректное значение
     for(let i of arr) {
-        if(!(i % 1 === 0)) {
+        if(!(i % 1 === 0) || i < 0) {
             return 'Некорректные данные';
         }
     }

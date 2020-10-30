@@ -16,7 +16,8 @@ console.log( converting_numbers(test_var[5]), '\n');
 
 function converting_numbers(numb) {
 
-  // побитовое "или" некорректно работает с числами в 10 степени и более
+  /* побитовое "или" некорректно работает с числами в 10
+  степени и более */
   /* console.log( numb );
   let f = (numb ^ 0);
   if ( f === numb ) console.log("ssss");
@@ -24,7 +25,9 @@ function converting_numbers(numb) {
 
   // проверка исходных данных на корректное значение
   if (numb % 1 !== 0) return 'Исходные данные не корректны';
-  else if (typeof(numb) == 'number') console.log("Целое число! Сейчас все поправим...");
+  else if (typeof(numb) == 'number') {
+    console.log("Целое число! Сейчас все поправим...");
+  }
   else return 'Исходные данные не корректны';
 
   // преобразуем полученный объект в строку
