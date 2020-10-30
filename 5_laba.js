@@ -3,7 +3,7 @@ let imp_data_1 = "12345 12345 "
 console.log( "Первый символ, который не повторяется в \'", imp_data_1, "\': \'" + duplicate_el(imp_data_1) + '\'' );
 let imp_data_2 = "12345 1234"
 console.log( "Первый символ, который не повторяется в \'", imp_data_2, "\': \'" + duplicate_el(imp_data_2) + '\'' );
-let imp_data_3 = "12345 12345 "
+let imp_data_3 = "Жыве Беларусь"
 console.log( "Первый символ, который не повторяется в \'", imp_data_3, "\': \'" + duplicate_el(imp_data_3) + '\'' );
 
 
