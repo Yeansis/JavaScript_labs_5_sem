@@ -5,8 +5,6 @@ imp_data_2 = "(}-:";
 console.log( find_reg_expr(imp_data_2), '\n');
 imp_data_3 = "Жыве Беларусь";
 console.log( find_reg_expr(imp_data_3), '\n');
-imp_data_4 = "ttb1@tpu.ru";
-console.log( find_reg_expr(imp_data_4), '\n');
 
 
 function find_reg_expr(obj) {
