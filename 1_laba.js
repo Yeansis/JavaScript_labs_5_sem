@@ -6,12 +6,20 @@ let test_var = [10 ** 4, 10 ** 8, 10 ** 12,
 миллиарда и триллионов. количество цифр в целых числах и
 другие переменные выбраны неспроста - для более точного
 теста написанного кода */
-console.log( converting_numbers(test_var[0]), '\n');
-console.log( converting_numbers(test_var[1]), '\n');
-console.log( converting_numbers(test_var[2]), '\n');
-console.log( converting_numbers(test_var[3]), '\n');
-console.log( converting_numbers(test_var[4]), '\n');
-console.log( converting_numbers(test_var[5]), '\n');
+try {
+  console.log( converting_numbers(test_var[0]), '\n');
+  console.log( converting_numbers(test_var[1]), '\n');
+  console.log( converting_numbers(test_var[2]), '\n');
+  console.log( converting_numbers(test_var[3]), '\n');
+  console.log( converting_numbers(test_var[4]), '\n');
+  console.log( converting_numbers(test_var[5]), '\n');
+} catch (ex) {
+  // проверка - если исключение неизвестное, то пропускаем
+  if (ex !== 'Исходные данные не корректны') throw (ex);
+  console.log(ex, "\n\nПроцедура могла завершиться раньше положенного. " +
+      "Рекомендуется исправить ошибку и начать заново");
+}
+
 
 
 function converting_numbers(numb) {
@@ -24,11 +32,11 @@ function converting_numbers(numb) {
   else return 'Исходные данные не корректны' */
 
   // проверка исходных данных на корректное значение
-  if (numb % 1 !== 0) return 'Исходные данные не корректны';
+  if (numb % 1 !== 0) throw 'Исходные данные не корректны';
   else if (typeof(numb) == 'number') {
     console.log("Целое число! Сейчас все поправим...");
   }
-  else return 'Исходные данные не корректны';
+  else throw'Исходные данные не корректны';
 
   // преобразуем полученный объект в строку
   let str_numb = String(numb);

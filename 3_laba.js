@@ -1,14 +1,22 @@
 // возможность изменения пользователем исходных значений
-let arr_1 = [2020, 9, 28];
-console.log( first_day_week(arr_1) );
-let arr_2 = [2020, 9, 25];
-console.log( first_day_week(arr_2) );
-let arr_3 = [2020, 3.14, 28];
-console.log( first_day_week(arr_3) );
-let arr_4 = [2020, 9, "двадцать восемь"];
-console.log( first_day_week(arr_4) );
-let arr_5 = [2020, 9, -6];
-console.log( first_day_week(arr_5) );
+try {
+    let arr_1 = [2020, 9, 28];
+    console.log( first_day_week(arr_1) );
+    let arr_2 = [2020, 9, 25];
+    console.log( first_day_week(arr_2) );
+    let arr_3 = [2020, 3.14, 28];
+    console.log( first_day_week(arr_3) );
+    let arr_4 = [2020, 9, "двадцать восемь"];
+    console.log( first_day_week(arr_4) );
+    let arr_5 = [2020, 9, -6];
+    console.log( first_day_week(arr_5) );
+} catch (ex) {
+    // проверка - если исключение неизвестное, то пропускаем
+    if (ex !== 'Исходные данные не корректны') throw (ex);
+    console.log(ex, "\n\nПроцедура могла завершиться раньше положенного. " +
+        "Рекомендуется исправить ошибку и начать заново");
+}
+
 
 
 function first_day_week(arr) {
@@ -16,7 +24,7 @@ function first_day_week(arr) {
     // проверка исходных данных на корректное значение
     for(let i of arr) {
         if(!(i % 1 === 0) || i < 0) {
-            return 'Некорректные данные';
+            throw 'Исходные данные не корректны';
         }
     }
 
