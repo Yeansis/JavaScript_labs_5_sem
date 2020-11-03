@@ -7,12 +7,9 @@ let test_var = [10 ** 4, 10 ** 8, 10 ** 12,
 другие переменные выбраны неспроста - для более точного
 теста написанного кода */
 try {
-  console.log( converting_numbers(test_var[0]), '\n');
-  console.log( converting_numbers(test_var[1]), '\n');
-  console.log( converting_numbers(test_var[2]), '\n');
-  console.log( converting_numbers(test_var[3]), '\n');
-  console.log( converting_numbers(test_var[4]), '\n');
-  console.log( converting_numbers(test_var[5]), '\n');
+  for (let i = 0; i < test_var.length; i++ ) {
+    console.log( converting_numbers(test_var[i]), '\n');
+  }
 } catch (ex) {
   // проверка - если исключение неизвестное, то пропускаем
   console.log(ex.message, "\n\nПроцедура могла завершиться раньше положенного. " +
