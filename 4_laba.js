@@ -17,7 +17,7 @@ try {
 function poleax_for_str(obj, sz) {
 
     // проверка входного значения размера
-    if ( !(sz % 1 === 0) || sz <= 0 ) {
+    if ( !(sz % 1 === 0) || sz <= 0 || sz > obj.length) {
         throw new Error("Введен неверный размер!");
     }
 
