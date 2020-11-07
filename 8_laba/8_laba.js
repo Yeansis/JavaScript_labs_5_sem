@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", function() {
     // ставится обработчик клика
     select.addEventListener("click", function(event) {
 
-        //вывод результата в консоль
+        //вывод результата в консоль и в предупреждение
         alert(document.getElementById("mounth").length);
         console.log(document.getElementById("mounth").length);
     });
