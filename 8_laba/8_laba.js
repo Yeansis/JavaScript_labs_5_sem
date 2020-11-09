@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", function() {
     select.addEventListener("click", function(event) {
 
         //вывод результата в консоль и в предупреждение
-        alert(document.getElementById("mounth").length);
+        //alert(document.getElementById("mounth").length);
         console.log(document.getElementById("mounth").length);
     });
 });
