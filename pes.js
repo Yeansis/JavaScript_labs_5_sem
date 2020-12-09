@@ -1,2 +1,10 @@
-console.log('\x1b[36m%s\x1b[0m', 'I am cyan');  //cyan
-console.log('\x1b[33m%s\x1b[0m', 'I am cyan');  //yellow
+Reset = "\x1b[0m"
+FgBlack = "\x1b[30m"
+FgRed = "\x1b[31m"
+FgGreen = "\x1b[32m"
+FgYellow = "\x1b[33m"
+FgBlue = "\x1b[34m"
+FgMagenta = "\x1b[35m"
+FgCyan = "\x1b[36m"
+console.log(FgGreen+'%s'+Reset, 'I am cyan');
+console.log(FgBlue+'%s'+Reset, 'I am cyan');
