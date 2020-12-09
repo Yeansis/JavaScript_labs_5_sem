@@ -1,6 +1,2 @@
-let vss_vintorez = {
-    use: 'combat',
-    shooting: 'silent',
-    caliber: 9,
-};
-console.log(typeof vss_vintorez === "object")
+console.log('\x1b[36m%s\x1b[0m', 'I am cyan');  //cyan
+console.log('\x1b[33m%s\x1b[0m', 'I am cyan');  //yellow
