@@ -8,4 +8,3 @@ function makeFunc() {
 
 let myFunc = makeFunc();
 myFunc();
-
