@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image:url(https://img1.akspic.ru/image/135794-atmosfera-kosmos-purpur-zvezda-tumannost-3840x2160.jpg);
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 350px;
+    height: 500px;
+    background: white;
+    border-radius: 10px;
+    padding:50px;
+}

@@ -1,11 +1,2 @@
-function makeFunc() {
-    let name = "Mozilla";
-    function displayName() {
-        console.log(name);
-    }
-    return displayName;
-};
-
-let myFunc = makeFunc();
-myFunc();
-
+console.log(0)
+console.log(~0)
