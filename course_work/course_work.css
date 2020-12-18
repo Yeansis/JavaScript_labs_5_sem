@@ -13,10 +13,29 @@ body {
     align-items: center;
 }
 
+input {
+    outline:none;
+}
+
 .content {
-    width: 350px;
-    height: 500px;
-    background: white;
+    width: 375px;
+    height: 350px;
     border-radius: 10px;
     padding:50px;
+}
+
+.result {
+    width: 275px;
+    height: 225px;
+    background: white;
+    border-radius: 2px;
+    padding:15px;
+}
+
+#value {
+    width: 200px;
+}
+
+#button {
+    width: 70px;
 }
