@@ -21,7 +21,6 @@ function func(){
         }
     }
     catch(ex){
-        alert( ex.message )
         document.getElementById("text_spec_value_10").innerHTML = "";
         document.getElementById("spec_value_10").innerHTML = "";
         document.getElementById("text_spec_value_2").innerHTML = "";
@@ -31,6 +30,7 @@ function func(){
         document.getElementById("res_value_10").innerHTML = "";
         document.getElementById("text_res_value_2").innerHTML = "";
         document.getElementById("res_value_2").innerHTML = "";
+        alert( ex.message )
     }
     finally {
         document.getElementById('value').value = "";
