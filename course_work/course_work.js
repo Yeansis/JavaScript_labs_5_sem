@@ -22,13 +22,15 @@ function func(){
     }
     catch(ex){
         alert( ex.message )
-        document.getElementById("text for specified value").innerHTML = "";
-        document.getElementById("specified value in 2 form").innerHTML = "";
+        document.getElementById("text_spec_value_10").innerHTML = "";
+        document.getElementById("spec_value_10").innerHTML = "";
+        document.getElementById("text_spec_value_2").innerHTML = "";
+        document.getElementById("spec_value_2").innerHTML = "";
         document.getElementById("text").innerHTML = "";
-        document.getElementById("text result in 10 form").innerHTML = "";
-        document.getElementById("result in 10 form").innerHTML = "";
-        document.getElementById("text result in 2 form").innerHTML = "";
-        document.getElementById("result in 2 form").innerHTML = "";
+        document.getElementById("text_res_value_10").innerHTML = "";
+        document.getElementById("res_value_10").innerHTML = "";
+        document.getElementById("text_res_value_2").innerHTML = "";
+        document.getElementById("res_value_2").innerHTML = "";
     }
     finally {
         document.getElementById('value').value = "";
